@@ -1,0 +1,34 @@
+{
+    "name": "lupasearch/magento2-lupasearch-plugin-queue-db",
+    "version": "1.0.0",
+    "description": "LupaSearch Magento 2 extension for MySQL queue support",
+    "type": "magento2-module",
+    "config": {
+        "allow-plugins": {
+            "magento/magento-composer-installer": false,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "magento/composer-dependency-version-audit-plugin": true
+        }
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-json": "*",
+        "magento/framework": ">=101.0",
+        "lupasearch/magento2-lupasearch-plugin": "^1.0"
+    },
+    "license": "proprietary",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "LupaSearch\\LupaSearchPluginQueueDb\\": ""
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ]
+}
